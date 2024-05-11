@@ -5,27 +5,29 @@ dayjs.extend(relativeTime);
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen max-w-4xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-24">
+		<main className="flex min-h-screen max-w-5xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-24">
 			<h1 className="text-9xl font-semibold">NO</h1>
-			<h2 className="text-xl max-w-3xl font-bold">
-				Firestorm is not PBR ready yet,{" "}
-				<span className="text-blue-200">Linden Lab</span> released their PBR
-				viewer{" "}
-				<a
-					href="https://community.secondlife.com/blogs/entry/14536-second-life-pbr-materials-official-launch"
-					rel="noreferrer"
-				>
-					{dayjs().to(new Date("2023-11-28"))}
-				</a>
+			<h2 className="text-xl sm:text-3xl font-bold space-y-3">
+				<div>Firestorm is not PBR ready yet,</div>
+				<div className="font-semibold leading-snug">
+					<span className="text-blue-200 text-nowrap">Linden Lab</span> released
+					their PBR viewer{" "}
+					<a
+						href="https://community.secondlife.com/blogs/entry/14536-second-life-pbr-materials-official-launch"
+						rel="noreferrer"
+					>
+						{dayjs().to(new Date("2023-11-28"))}
+					</a>
+				</div>
 			</h2>
-			<h3 className="text-xl max-w-3xl font-bold">
-				Firestorm viewer was last updated{" "}
+			<h3 className="max-w-3xl">
+				Firestorm Viewer was last updated{" "}
 				<a href="https://www.firestormviewer.org" rel="noreferrer">
 					{dayjs().to(new Date("2023-12-24"))}
 				</a>
 			</h3>
 			<hr className="w-full border-t-2 opacity-20 my-4" />
-			<div className="space-y-8 leading-relaxed font-light">
+			<div className="space-y-8 leading-relaxed font-light text-balance">
 				<p>
 					Instead of just slapping on textures and hoping for the best, PBR uses
 					advanced calculations to accurately simulate how light interacts with
@@ -78,10 +80,14 @@ export default function Home() {
 				</ol>
 			</div>
 			<hr className="w-full border-t-2 opacity-20 my-4" />
-			<a href="https://github.com/gwigz/isfirestormpbryet" rel="noreferrer">
+			<a
+				className="font-light text-blue-200 no-underline hover:underline focus:underline"
+				href="https://github.com/gwigz/isfirestormpbryet"
+				rel="noreferrer"
+			>
 				GitHub
 			</a>
-			<p className="opacity-70 font-light italic">
+			<p className="opacity-70 font-light italic text-base">
 				This website is not affiliated with Linden Lab or Firestorm Viewer
 			</p>
 		</main>
