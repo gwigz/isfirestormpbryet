@@ -3,10 +3,10 @@
 import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
-	const { theme, setTheme } = useTheme();
+	const { theme, systemTheme, setTheme } = useTheme();
 
 	function toggleDarkMode() {
-		setTheme(theme === "dark" ? "light" : "dark");
+		setTheme((theme ?? systemTheme) === "dark" ? "light" : "dark");
 	}
 
 	return (
