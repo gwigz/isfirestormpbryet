@@ -3,15 +3,24 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 dayjs.extend(relativeTime);
 
+function Separator() {
+	return (
+		<hr className="w-full border-t-2 border-foreground/5 dark:border-foreground/20 my-4" />
+	);
+}
+
 export default function Home() {
 	return (
 		<main className="flex min-h-screen max-w-5xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-24">
 			<h1 className="text-9xl font-semibold">NO</h1>
+
 			<h2 className="text-xl sm:text-3xl font-bold space-y-3">
 				<div>Firestorm is not PBR ready yet,</div>
 				<div className="font-semibold leading-snug">
-					<span className="text-blue-200 text-nowrap">Linden Lab</span> released
-					their PBR viewer{" "}
+					<span className="text-blue-400 dark:text-blue-300 text-nowrap">
+						Linden Lab
+					</span>{" "}
+					released their PBR viewer{" "}
 					<a
 						href="https://community.secondlife.com/blogs/entry/14536-second-life-pbr-materials-official-launch"
 						rel="noreferrer"
@@ -20,13 +29,16 @@ export default function Home() {
 					</a>
 				</div>
 			</h2>
+
 			<h3 className="max-w-3xl">
 				Firestorm Viewer was last updated{" "}
 				<a href="https://www.firestormviewer.org" rel="noreferrer">
 					{dayjs().to(new Date("2023-12-24"))}
 				</a>
 			</h3>
-			<hr className="w-full border-t-2 opacity-20 my-4" />
+
+			<Separator />
+
 			<div className="space-y-8 leading-relaxed font-light text-balance">
 				<p>
 					Instead of just slapping on textures and hoping for the best, PBR uses
@@ -43,21 +55,33 @@ export default function Home() {
 					card is more than ready for it.
 				</p>
 			</div>
+
 			<div className="flex flex-col gap-6">
 				<h3 className="font-semibold">Try a PBR viewer today!</h3>
-				<div className="flex flex-col sm:flex-row [&>*]:flex-grow gap-4 sm:gap-12">
-					<a href="https://secondlife.com/support/downloads" rel="noreferrer">
-						Official Viewer
-					</a>
-					<a href="https://www.alchemyviewer.org" rel="noreferrer">
-						Alchemy Viewer
-					</a>
-					<a href="https://niranv-sl.blogspot.com" rel="noreferrer">
-						Black Dragon Viewer
-					</a>
+				<div className="flex flex-col lg:flex-row gap-4 sm:gap-8 md:gap-12 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
+					<div>
+						<a href="https://secondlife.com/support/downloads" rel="noreferrer">
+							Official Viewer
+						</a>
+						PBR since {dayjs(new Date("2023-11-28")).format("MMMM D, YYYY")}
+					</div>{" "}
+					<div>
+						<a href="https://www.alchemyviewer.org" rel="noreferrer">
+							Alchemy Viewer
+						</a>
+						PBR since {dayjs(new Date("2023-12-02")).format("MMMM D, YYYY")}
+					</div>{" "}
+					<div>
+						<a href="https://niranv-sl.blogspot.com" rel="noreferrer">
+							Black Dragon Viewer
+						</a>
+						PBR since {dayjs(new Date("2023-12-02")).format("MMMM D, YYYY")}
+					</div>
 				</div>
 			</div>
-			<hr className="w-full border-t-2 opacity-20 my-4" />
+
+			<Separator />
+
 			<div className="flex flex-col gap-6">
 				<h3>
 					Alternatively, try out the Firestorm Beta,{" "}
@@ -79,14 +103,17 @@ export default function Home() {
 					<li>Download and install the beta viewer</li>
 				</ol>
 			</div>
-			<hr className="w-full border-t-2 opacity-20 my-4" />
+
+			<Separator />
+
 			<a
-				className="font-light text-blue-200 no-underline hover:underline focus:underline"
+				className="dark:text-blue-200 no-underline hover:underline focus:underline"
 				href="https://github.com/gwigz/isfirestormpbryet"
 				rel="noreferrer"
 			>
 				GitHub
 			</a>
+
 			<p className="opacity-70 font-light italic text-base">
 				This website is not affiliated with Linden Lab or Firestorm Viewer
 			</p>
