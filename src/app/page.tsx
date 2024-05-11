@@ -117,13 +117,15 @@ export default function Home() {
 
 			<Separator />
 
-			<a
-				className="dark:text-blue-200 no-underline hover:underline focus:underline"
-				href="https://github.com/gwigz/isfirestormpbryet"
-				rel="noreferrer"
-			>
-				GitHub
-			</a>
+			<p>
+				<a
+					className="dark:text-blue-200 no-underline hover:underline focus:underline"
+					href="https://github.com/gwigz/isfirestormpbryet"
+					rel="noreferrer"
+				>
+					GitHub
+				</a>
+			</p>
 
 			<p className="opacity-70 font-light italic text-base">
 				This website is not affiliated with Linden Lab or Firestorm Viewer

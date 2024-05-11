@@ -7,8 +7,8 @@ import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Firestorm is NOT PBR ready yet",
-	description: "When will Firestorm Viewer be PBR ready?",
+	title: "Firestorm is NOT PBR yet",
+	description: "When will Firestorm Viewer update?",
 };
 
 export default function RootLayout({
