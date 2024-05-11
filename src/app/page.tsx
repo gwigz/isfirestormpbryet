@@ -5,7 +5,7 @@ dayjs.extend(relativeTime);
 
 function Separator() {
 	return (
-		<hr className="w-full border-t-2 border-foreground/5 dark:border-foreground/20 my-4" />
+		<hr className="w-full border-t-2 border-foreground/5 dark:border-foreground/10 my-4" />
 	);
 }
 
@@ -56,7 +56,7 @@ export default function Home() {
 				</p>
 			</div>
 
-			<div className="flex flex-col gap-6">
+			<div className="flex flex-col gap-8">
 				<h3 className="font-semibold">Try a PBR viewer today!</h3>
 				<div className="flex flex-col lg:flex-row gap-4 sm:gap-8 md:gap-12 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
 					<div>
@@ -66,18 +66,29 @@ export default function Home() {
 						PBR since {dayjs(new Date("2023-11-28")).format("MMMM D, YYYY")}
 					</div>{" "}
 					<div>
-						<a href="https://www.alchemyviewer.org" rel="noreferrer">
-							Alchemy Viewer
-						</a>
-						PBR since {dayjs(new Date("2023-12-02")).format("MMMM D, YYYY")}
+						<div>
+							<a href="https://www.alchemyviewer.org" rel="noreferrer">
+								Alchemy Viewer
+							</a>
+							<span className="opacity-70">*</span>
+						</div>
+						PBR since {dayjs(new Date("2023-10-11")).format("MMMM D, YYYY")}
 					</div>{" "}
 					<div>
-						<a href="https://niranv-sl.blogspot.com" rel="noreferrer">
-							Black Dragon Viewer
-						</a>
+						<div>
+							<a href="https://niranv-sl.blogspot.com" rel="noreferrer">
+								Black Dragon Viewer
+							</a>
+							<span className="opacity-70">*</span>
+						</div>
 						PBR since {dayjs(new Date("2023-12-02")).format("MMMM D, YYYY")}
 					</div>
 				</div>
+
+				<p className="opacity-70 font-light italic text-base">
+					* These viewers are not affiliated with Linden Lab, and are currently
+					"beta" but publicly available online
+				</p>
 			</div>
 
 			<Separator />
