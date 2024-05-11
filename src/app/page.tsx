@@ -49,10 +49,14 @@ export default function Home() {
 				<p>
 					Games like Cyberpunk 2077, Fortnite, and Halo all use PBR to great
 					effect, drawing you in to their worlds with immersive visuals. Now we
-					have this in Second Life. Don't worry about your system performance
+					have this in Second Life! Don't worry about your system performance
 					either, PBR has been making your games look cool since 2013. It's a
-					well understood technology and it's more than likely your graphics
+					well understood technology, and it's more than likely your graphics
 					card is more than ready for it.
+				</p>
+				<p>
+					The latest update also comes with; HDR environments, auto exposure,
+					tone-mapping, and emojis 🤪✨
 				</p>
 			</div>
 
@@ -88,6 +92,27 @@ export default function Home() {
 				<p className="opacity-70 font-light italic text-base">
 					* These viewers are not affiliated with Linden Lab, and are currently
 					"beta" but publicly available online
+				</p>
+			</div>
+
+			<div className="grid gap-2">
+				<h4 className="italic">And that's not all!</h4>
+				<p>More features are coming soon:</p>
+				<p>
+					<a
+						href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
+						rel="noreferrer"
+					>
+						PBR materials on terrain
+					</a>
+					,{" "}
+					<a
+						href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
+						rel="noreferrer"
+					>
+						mirrors
+					</a>
+					, glTF scene importer, and more!
 				</p>
 			</div>
 
