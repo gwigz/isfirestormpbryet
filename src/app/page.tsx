@@ -11,7 +11,7 @@ function Separator() {
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen max-w-5xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-24">
+		<main className="flex min-h-screen max-w-6xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-24">
 			<h1 className="text-9xl font-semibold">NO</h1>
 
 			<h2 className="text-xl sm:text-3xl font-bold space-y-3">
@@ -39,7 +39,7 @@ export default function Home() {
 
 			<Separator />
 
-			<div className="space-y-8 leading-relaxed font-light text-balance">
+			<div className="max-w-3xl space-y-8 leading-relaxed font-light text-balance">
 				<p>
 					Instead of just slapping on textures and hoping for the best, PBR uses
 					advanced calculations to accurately simulate how light interacts with
@@ -62,7 +62,7 @@ export default function Home() {
 
 			<div className="flex flex-col gap-8">
 				<h3 className="font-semibold">Try a PBR viewer today!</h3>
-				<div className="flex flex-col lg:flex-row gap-4 sm:gap-8 md:gap-12 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
+				<div className="flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-12 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
 					<div>
 						<a href="https://secondlife.com/support/downloads" rel="noreferrer">
 							Official Viewer
@@ -86,6 +86,17 @@ export default function Home() {
 							<span className="opacity-70">*</span>
 						</div>
 						PBR since {dayjs(new Date("2023-12-02")).format("MMMM D, YYYY")}
+					</div>
+					<div>
+						<div>
+							<a
+								href="https://kokua.atlassian.net/wiki/spaces/KKA/overview?mode=global"
+								rel="noreferrer"
+							>
+								Kokua Viewer
+							</a>
+						</div>
+						PBR since {dayjs(new Date("2024-03-30")).format("MMMM D, YYYY")}
 					</div>
 				</div>
 
@@ -118,7 +129,7 @@ export default function Home() {
 
 			<Separator />
 
-			<div className="flex flex-col gap-6">
+			<div className="max-w-3xl flex flex-col gap-6">
 				<h3>
 					Alternatively, try out the Firestorm Beta,{" "}
 					<span className="italic opacity-70">
