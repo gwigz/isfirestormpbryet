@@ -11,7 +11,7 @@ function Separator() {
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen max-w-7xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-24">
+		<main className="flex min-h-screen max-w-7xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-12">
 			<h1 className="text-9xl font-semibold">NO</h1>
 
 			<h2 className="text-xl sm:text-3xl font-bold space-y-3">
@@ -33,7 +33,7 @@ export default function Home() {
 			<h3 className="max-w-3xl">
 				Firestorm Viewer was last updated{" "}
 				<a href="https://www.firestormviewer.org" rel="noreferrer">
-					{dayjs().to(new Date("2023-12-24"))}
+					{dayjs().to(new Date("2023-12-14"))}
 				</a>
 			</h3>
 
@@ -64,40 +64,62 @@ export default function Home() {
 				<h3 className="font-semibold">Try a PBR viewer today!</h3>
 				<div className="flex flex-col xl:flex-row gap-4 sm:gap-6 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
 					<div>
-						<a href="https://secondlife.com/support/downloads" rel="noreferrer">
-							Official Viewer
-						</a>
+						<div>
+							<span className="relative">
+								<a
+									href="https://secondlife.com/support/downloads"
+									rel="noreferrer"
+								>
+									Official Viewer
+								</a>
+								<span className="absolute right-0 translate-x-full opacity-70 align-super text-sm">
+									*
+								</span>
+							</span>
+						</div>
 						PBR since {dayjs(new Date("2023-11-28")).format("MMMM D, YYYY")}
 					</div>{" "}
 					<div>
 						<div>
-							<a href="https://www.alchemyviewer.org" rel="noreferrer">
-								Alchemy Viewer
-							</a>
-							<span className="opacity-70">*</span>
+							<span className="relative">
+								<a href="https://www.alchemyviewer.org" rel="noreferrer">
+									Alchemy Viewer
+								</a>
+								<span className="absolute right-0 translate-x-full opacity-70 align-super text-sm">
+									1
+								</span>
+							</span>
 						</div>
 						PBR since {dayjs(new Date("2023-10-11")).format("MMMM D, YYYY")}
 					</div>{" "}
 					<div>
 						<div>
-							<a href="https://niranv-sl.blogspot.com" rel="noreferrer">
-								Black Dragon Viewer
-							</a>
-							<span className="opacity-70">*</span>
+							<span className="relative">
+								<a href="https://niranv-sl.blogspot.com" rel="noreferrer">
+									Black Dragon Viewer
+								</a>
+								<span className="absolute right-0 translate-x-full opacity-70 text-left align-super text-sm">
+									1,2
+								</span>
+							</span>
 						</div>
 						PBR since {dayjs(new Date("2023-12-02")).format("MMMM D, YYYY")}
 					</div>
 					<div>
 						<div>
-							<a href="http://sldev.free.fr" rel="noreferrer">
-								CoolVLViewer
-							</a>
-							<span className="opacity-70">**</span>
+							<span className="relative">
+								<a href="http://sldev.free.fr" rel="noreferrer">
+									CoolVLViewer
+								</a>
+								<span className="absolute right-0 translate-x-full opacity-70 align-super text-sm">
+									3
+								</span>
+							</span>
 						</div>
 						PBR since {dayjs(new Date("2023-07-29")).format("MMMM D, YYYY")}
 					</div>
 					<div>
-						<div>
+						<div className="relative">
 							<a
 								href="https://kokua.atlassian.net/wiki/spaces/KKA/overview?mode=global"
 								rel="noreferrer"
@@ -115,11 +137,20 @@ export default function Home() {
 					</p>
 
 					<p className="opacity-70 font-light italic text-base">
-						* These viewers are currently "beta" but publicly available online
+						* No Linux support
 					</p>
 
 					<p className="opacity-70 font-light italic text-base">
-						** These viewers only provide the V1-style interface
+						1. Currently labelled as "beta", but are publicly available online
+					</p>
+
+					<p className="opacity-70 font-light italic text-base">
+						2. Non-typical interface, Windows only, and may not be suitable for
+						all users
+					</p>
+
+					<p className="opacity-70 font-light italic text-base">
+						3. Only provides the V1-style interface
 					</p>
 				</div>
 			</div>
@@ -147,7 +178,7 @@ export default function Home() {
 
 			<Separator />
 
-			<div className="max-w-3xl flex flex-col gap-6">
+			<div className="max-w-3xl flex flex-col gap-6 text-balance">
 				<h3>
 					Alternatively, try out the Firestorm Beta,{" "}
 					<span className="italic opacity-70">
@@ -166,6 +197,10 @@ export default function Home() {
 						the latest beta viewer
 					</li>
 					<li>Download and install the beta viewer</li>
+					<li>
+						Watch out for any further group notices, as you may not be able to
+						login on old versions!
+					</li>
 				</ol>
 			</div>
 
