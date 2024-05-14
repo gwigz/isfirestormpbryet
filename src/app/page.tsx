@@ -77,7 +77,7 @@ export default function Home() {
 								</span>
 							</span>
 						</div>
-						PBR since {dayjs(new Date("2023-11-28")).format("MMMM D, YYYY")}
+						PBR since {dayjs(new Date("2023-11-28")).format("MMMM YYYY")}
 					</div>{" "}
 					<div>
 						<div>
@@ -90,7 +90,7 @@ export default function Home() {
 								</span>
 							</span>
 						</div>
-						PBR since {dayjs(new Date("2023-10-11")).format("MMMM D, YYYY")}
+						PBR since {dayjs(new Date("2023-10-11")).format("MMMM YYYY")}
 					</div>{" "}
 					<div>
 						<div>
@@ -103,7 +103,7 @@ export default function Home() {
 								</span>
 							</span>
 						</div>
-						PBR since {dayjs(new Date("2023-12-02")).format("MMMM D, YYYY")}
+						PBR since {dayjs(new Date("2023-12-02")).format("MMMM YYYY")}
 					</div>
 					<div>
 						<div>
@@ -116,7 +116,7 @@ export default function Home() {
 								</span>
 							</span>
 						</div>
-						PBR since {dayjs(new Date("2023-07-29")).format("MMMM D, YYYY")}
+						PBR since {dayjs(new Date("2023-07-29")).format("MMMM YYYY")}
 					</div>
 					<div>
 						<div className="relative">
@@ -127,7 +127,7 @@ export default function Home() {
 								Kokua Viewer
 							</a>
 						</div>
-						PBR since {dayjs(new Date("2024-03-30")).format("MMMM D, YYYY")}
+						PBR since {dayjs(new Date("2024-03-30")).format("MMMM YYYY")}
 					</div>
 				</div>
 
