@@ -90,7 +90,7 @@ export default function Home() {
 								</span>
 							</span>
 						</div>
-						PBR since {dayjs(new Date("2023-10-11")).format("MMMM YYYY")}
+						PBR since {dayjs(new Date("2023-04-14")).format("MMMM YYYY")}
 					</div>{" "}
 					<div>
 						<div>
@@ -217,7 +217,7 @@ export default function Home() {
 			</p>
 
 			<p className="opacity-70 font-light italic text-base">
-				This website is not affiliated with Linden Lab or Firestorm Viewer
+				This website is not affiliated with Linden Lab or any third party viewer
 			</p>
 		</main>
 	);
