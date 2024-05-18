@@ -62,7 +62,8 @@ export default function Home() {
 
 			<div className="flex flex-col gap-8">
 				<h3 className="font-semibold">Try a PBR viewer today!</h3>
-				<div className="flex flex-col xl:flex-row gap-4 sm:gap-6 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
+
+				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
 					<div>
 						<div>
 							<span className="relative">
@@ -78,7 +79,8 @@ export default function Home() {
 							</span>
 						</div>
 						PBR since {dayjs(new Date("2023-11-28")).format("MMMM YYYY")}
-					</div>{" "}
+					</div>
+
 					<div>
 						<div>
 							<span className="relative">
@@ -91,7 +93,8 @@ export default function Home() {
 							</span>
 						</div>
 						PBR since {dayjs(new Date("2023-04-14")).format("MMMM YYYY")}
-					</div>{" "}
+					</div>
+
 					<div>
 						<div>
 							<span className="relative">
@@ -105,6 +108,7 @@ export default function Home() {
 						</div>
 						PBR since {dayjs(new Date("2023-12-02")).format("MMMM YYYY")}
 					</div>
+
 					<div>
 						<div>
 							<span className="relative">
@@ -118,16 +122,33 @@ export default function Home() {
 						</div>
 						PBR since {dayjs(new Date("2023-07-29")).format("MMMM YYYY")}
 					</div>
+
 					<div>
-						<div className="relative">
-							<a
-								href="https://kokua.atlassian.net/wiki/spaces/KKA/overview?mode=global"
-								rel="noreferrer"
-							>
-								Kokua Viewer
-							</a>
+						<div>
+							<span className="relative">
+								<a
+									href="https://kokua.atlassian.net/wiki/spaces/KKA/overview?mode=global"
+									rel="noreferrer"
+								>
+									Kokua Viewer
+								</a>
+							</span>
 						</div>
 						PBR since {dayjs(new Date("2024-03-30")).format("MMMM YYYY")}
+					</div>
+
+					<div>
+						<div>
+							<span className="relative">
+								<a href="https://megapahit.net" rel="noreferrer">
+									Megapahit Viewer
+								</a>
+								<span className="absolute right-0 translate-x-full opacity-70 align-super text-sm">
+									**
+								</span>
+							</span>
+						</div>
+						PBR since initial release
 					</div>
 				</div>
 
@@ -138,6 +159,10 @@ export default function Home() {
 
 					<p className="opacity-70 font-light italic text-base">
 						* No Linux support
+					</p>
+
+					<p className="opacity-70 font-light italic text-base">
+						** Only supports Linux, and macOS arm64 (Apple Silicon)
 					</p>
 
 					<p className="opacity-70 font-light italic text-base">
