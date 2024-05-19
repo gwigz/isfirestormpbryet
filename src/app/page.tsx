@@ -63,7 +63,7 @@ export default function Home() {
 			<div className="flex flex-col gap-8">
 				<h3 className="font-semibold">Try a PBR viewer today!</h3>
 
-				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
+				<div className="grid items-start sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 [&>*]:flex-grow [&>*]:grid [&>*]:gap-1 [&>*]:md:gap-3 [&>*]:text-foreground/70">
 					<div>
 						<div>
 							<span className="relative">
@@ -162,7 +162,14 @@ export default function Home() {
 					</p>
 
 					<p className="opacity-70 font-light italic text-base">
-						** Only supports Linux, and macOS arm64 (Apple Silicon)
+						** Only supports Linux, and macOS arm64 (Apple Silicon), no voice
+						support planned till{" "}
+						<a
+							href="https://community.secondlife.com/blogs/entry/15626-coming-to-an-agni-region-near-you-an-update-on-changes-to-voice"
+							rel="noreferrer"
+						>
+							WebRTC update
+						</a>
 					</p>
 
 					<p className="opacity-70 font-light italic text-base">
@@ -180,24 +187,60 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="grid gap-2">
+			<div className="grid gap-8">
 				<h4 className="italic">And that's not all!</h4>
-				<p>More features are coming soon:</p>
-				<p>
-					<a
-						href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
-						rel="noreferrer"
-					>
-						PBR materials on terrain
-					</a>
-					,{" "}
-					<a
-						href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
-						rel="noreferrer"
-					>
-						mirrors
-					</a>
-					, glTF scene importer, and more!
+				<p className="font-bold">More features are coming soon:</p>
+				<ul className="grid text-left list-disc md:list-none pl-6 md:pl-0 leading-relaxed max-w-lg md:max-w-[100%] mx-auto md:text-center gap-2 md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:[&>*]:max-w-[23rem]">
+					<li>
+						<a
+							href="https://community.secondlife.com/blogs/entry/15626-coming-to-an-agni-region-near-you-an-update-on-changes-to-voice"
+							rel="noreferrer"
+						>
+							WebRTC voice
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
+							rel="noreferrer"
+						>
+							PBR materials on terrain
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
+							rel="noreferrer"
+						>
+							Mirrors
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://modemworld.me/2024/05/17/2024-week-20-sl-ccug-summary"
+							rel="noreferrer"
+						>
+							glTF scene importer
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://modemworld.me/2024/05/17/2024-week-20-sl-ccug-summary"
+							rel="noreferrer"
+						>
+							glTF extensions for better translucent materials, and LOD control
+						</a>
+					</li>
+					<li>
+						<span>
+							More glTF extensions, blend shapes, and non-linear animation
+							support
+						</span>
+					</li>
+				</ul>
+
+				<p className="opacity-70 font-light italic text-base">
+					Some of these are work in progress, and subject to change
 				</p>
 			</div>
 
