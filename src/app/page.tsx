@@ -17,15 +17,16 @@ export default function Home() {
 			<h2 className="text-xl sm:text-3xl font-bold space-y-3">
 				<div>Firestorm finally has PBR downloads available</div>
 				<div className="font-semibold leading-snug">
-					<span className="text-blue-400 dark:text-blue-300 text-nowrap">
+					<span className="text-blue-500 dark:text-blue-300 text-nowrap">
 						Linden Lab
 					</span>{" "}
 					released PBR{" "}
 					<a
 						href="https://community.secondlife.com/blogs/entry/14536-second-life-pbr-materials-official-launch"
+						title="2023-11-28 - Second Life PBR Materials Official Launch"
 						rel="noreferrer"
 					>
-						{dayjs().to(new Date("2023-11-28"))}
+						7 months before Firestorm
 					</a>
 				</div>
 			</h2>
