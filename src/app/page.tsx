@@ -235,9 +235,6 @@ export default function Home() {
 					<a href="https://www.firestormviewer.org" rel="noreferrer">
 						stay with Firestorm
 					</a>
-					<span className="absolute right-0 top-0 translate-x-full opacity-70 text-left align-super text-xs">
-						1
-					</span>
 				</span>
 				<div>Hopefully future updates are more frequent!</div>
 			</h3>
