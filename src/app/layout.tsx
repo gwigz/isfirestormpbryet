@@ -3,12 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "./_theme-toggle";
 import { ThemeProvider } from "next-themes";
+import { Confetti } from "./_confetti";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Firestorm is NOT PBR yet",
-	description: "When will Firestorm Viewer update?",
+	title: "Is Firestorm PBR yet",
+	description: "Yes! Downloads are available now...",
 };
 
 export default function RootLayout({
@@ -22,6 +23,7 @@ export default function RootLayout({
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 					{children}
 
+					<Confetti />
 					<ThemeToggle />
 				</ThemeProvider>
 			</body>

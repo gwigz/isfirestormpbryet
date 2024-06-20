@@ -12,30 +12,31 @@ function Separator() {
 export default function Home() {
 	return (
 		<main className="flex min-h-screen max-w-7xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-12">
-			<h1 className="text-9xl font-semibold">NO</h1>
+			<h1 className="text-9xl font-semibold">YES</h1>
 
 			<h2 className="text-xl sm:text-3xl font-bold space-y-3">
-				<div>Firestorm is not PBR ready yet,</div>
+				<div>Firestorm finally has PBR downloads available</div>
 				<div className="font-semibold leading-snug">
-					<span className="text-blue-400 dark:text-blue-300 text-nowrap">
+					<span className="text-blue-500 dark:text-blue-300 text-nowrap">
 						Linden Lab
 					</span>{" "}
-					released their PBR viewer{" "}
+					released PBR{" "}
 					<a
 						href="https://community.secondlife.com/blogs/entry/14536-second-life-pbr-materials-official-launch"
+						title="2023-11-28 - Second Life PBR Materials Official Launch"
 						rel="noreferrer"
 					>
-						{dayjs().to(new Date("2023-11-28"))}
+						7 months before Firestorm
 					</a>
 				</div>
 			</h2>
 
-			<h3 className="max-w-3xl">
+			{/* <h3 className="max-w-3xl">
 				Firestorm Viewer was last updated{" "}
 				<a href="https://www.firestormviewer.org" rel="noreferrer">
 					{dayjs().to(new Date("2023-12-14"))}
 				</a>
-			</h3>
+			</h3> */}
 
 			<Separator />
 
@@ -55,8 +56,8 @@ export default function Home() {
 					card is more than ready for it.
 				</p>
 				<p>
-					The latest update also comes with; HDR environments, auto exposure,
-					tone-mapping, and emojis 🤪✨
+					The latest update also comes with; mirrors, PBR terrain, HDR
+					environments, auto exposure, tone-mapping, and emojis 🤪✨
 				</p>
 			</div>
 
@@ -190,29 +191,13 @@ export default function Home() {
 			<div className="grid gap-8">
 				<h4 className="italic">And that's not all!</h4>
 				<p className="font-bold">More features are coming soon:</p>
-				<ul className="grid text-left list-disc md:list-none pl-6 md:pl-0 leading-relaxed max-w-lg md:max-w-[100%] mx-auto md:text-center gap-2 md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:[&>*]:max-w-[23rem]">
+				<ul className="grid text-left list-disc md:list-none pl-6 md:pl-0 leading-relaxed max-w-lg md:max-w-[100%] mx-auto md:text-center gap-2 md:grid-cols-2 md:gap-12 md:[&>*]:max-w-[23rem]">
 					<li>
 						<a
 							href="https://community.secondlife.com/blogs/entry/15626-coming-to-an-agni-region-near-you-an-update-on-changes-to-voice"
 							rel="noreferrer"
 						>
 							WebRTC voice
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
-							rel="noreferrer"
-						>
-							PBR materials on terrain
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
-							rel="noreferrer"
-						>
-							Mirrors
 						</a>
 					</li>
 					<li>
@@ -244,33 +229,18 @@ export default function Home() {
 				</p>
 			</div>
 
-			<Separator />
-
-			<div className="max-w-3xl flex flex-col gap-6 text-balance">
-				<h3>
-					Alternatively, try out the Firestorm Beta,{" "}
-					<span className="italic opacity-70">
-						it's a little hard to find on their site, so follow the guide below
+			<h3 className="leading-loose">
+				Alternatively,{" "}
+				<span className="relative">
+					<a href="https://www.firestormviewer.org" rel="noreferrer">
+						stay with Firestorm
+					</a>
+					<span className="absolute right-0 top-0 translate-x-full opacity-70 text-left align-super text-xs">
+						1
 					</span>
-				</h3>
-				<ol className="list-decimal text-left max-w-lg mx-auto font-light leading-relaxed pl-6 space-y-4">
-					<li>
-						Join the Firestorm{" "}
-						<a href="secondlife:///app/group/7ba4569c-9dd9-fed2-aaa7-36065d18a13c/about">
-							preview viewer group
-						</a>
-					</li>
-					<li>
-						Check the <span className="font-semibold">group notices</span> for
-						the latest beta viewer
-					</li>
-					<li>Download and install the beta viewer</li>
-					<li>
-						Watch out for any further group notices, as you may not be able to
-						login on old versions!
-					</li>
-				</ol>
-			</div>
+				</span>
+				<div>Hopefully future updates are more frequent!</div>
+			</h3>
 
 			<Separator />
 
