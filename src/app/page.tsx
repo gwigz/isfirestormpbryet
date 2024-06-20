@@ -55,8 +55,8 @@ export default function Home() {
 					card is more than ready for it.
 				</p>
 				<p>
-					The latest update also comes with; HDR environments, auto exposure,
-					tone-mapping, and emojis 🤪✨
+					The latest update also comes with; mirrors, PBR terrain, HDR
+					environments, auto exposure, tone-mapping, and emojis 🤪✨
 				</p>
 			</div>
 
@@ -190,29 +190,13 @@ export default function Home() {
 			<div className="grid gap-8">
 				<h4 className="italic">And that's not all!</h4>
 				<p className="font-bold">More features are coming soon:</p>
-				<ul className="grid text-left list-disc md:list-none pl-6 md:pl-0 leading-relaxed max-w-lg md:max-w-[100%] mx-auto md:text-center gap-2 md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:[&>*]:max-w-[23rem]">
+				<ul className="grid text-left list-disc md:list-none pl-6 md:pl-0 leading-relaxed max-w-lg md:max-w-[100%] mx-auto md:text-center gap-2 md:grid-cols-2 md:gap-12 md:[&>*]:max-w-[23rem]">
 					<li>
 						<a
 							href="https://community.secondlife.com/blogs/entry/15626-coming-to-an-agni-region-near-you-an-update-on-changes-to-voice"
 							rel="noreferrer"
 						>
 							WebRTC voice
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
-							rel="noreferrer"
-						>
-							PBR materials on terrain
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://community.secondlife.com/blogs/entry/15291-mirrors-pbr-terrain-and-2k-textures"
-							rel="noreferrer"
-						>
-							Mirrors
 						</a>
 					</li>
 					<li>
