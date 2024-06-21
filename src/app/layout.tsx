@@ -8,8 +8,9 @@ import { Confetti } from "./_confetti";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Is Firestorm PBR yet",
-	description: "Yes! Downloads are available now...",
+	title: "Is Firestorm PBR yet?",
+	description:
+		"Yes, and be sure to check out what else is coming soon to Second Life!",
 };
 
 export default function RootLayout({

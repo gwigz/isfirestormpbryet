@@ -5,13 +5,13 @@ dayjs.extend(relativeTime);
 
 function Separator() {
 	return (
-		<hr className="w-full border-t-2 border-foreground/5 dark:border-foreground/10 my-4" />
+		<hr className="h-0.5 w-full my-8 bg-gradient-to-r from-background via-foreground/10 to-background border-0" />
 	);
 }
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen max-w-7xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:p-12">
+		<main className="flex min-h-screen max-w-7xl mx-auto flex-col gap-8 sm:gap-12 sm:items-center justify-between text-balance sm:text-center text-xl p-6 sm:px-12 sm:py-40">
 			<h1 className="text-9xl font-semibold">YES</h1>
 
 			<h2 className="text-xl sm:text-3xl font-bold space-y-3">
@@ -202,24 +202,33 @@ export default function Home() {
 					</li>
 					<li>
 						<a
-							href="https://modemworld.me/2024/05/17/2024-week-20-sl-ccug-summary"
+							href="https://modemworld.me/2024/06/21/2024-week-25-sl-ccug-summary"
 							rel="noreferrer"
 						>
-							glTF scene importer
+							glTF scene importer, better translucent materials, and LOD control
 						</a>
 					</li>
 					<li>
 						<a
-							href="https://modemworld.me/2024/05/17/2024-week-20-sl-ccug-summary"
+							href="https://modemworld.me/2024/06/21/2024-week-25-sl-ccug-summary"
 							rel="noreferrer"
 						>
-							glTF extensions for better translucent materials, and LOD control
+							PBR terrain, and terrain texture repeat controls
 						</a>
 					</li>
 					<li>
 						<span>
-							More glTF extensions, blend shapes, and non-linear animation
-							support
+							More lighting controls,{" "}
+							<a
+								href="https://modemworld.me/2024/03/09/2024-week-10-sl-ccug-summary"
+								rel="noreferrer"
+							>
+								blend shapes,
+							</a>{" "}
+							and{" "}
+							<a href="https://modemworld.me/2024/05/11/2024-tpvd-meetings-may-10-webrtc-sl21b-pbr">
+								non-linear animation support
+							</a>
 						</span>
 					</li>
 				</ul>
